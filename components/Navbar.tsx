@@ -130,12 +130,11 @@ export default function Navbar() {
             ))}
 
             <a
-              href={portfolio.resume}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contact"
+              onClick={() => setMenuOpen(false)}
               className="mt-4 rounded-lg bg-blue-600 px-4 py-3 text-center text-white"
             >
-              Download Resume
+              Hire Me
             </a>
 
           </ul>

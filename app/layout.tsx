@@ -32,6 +32,12 @@ export const metadata: Metadata = {
 
   metadataBase: new URL("https://your-portfolio.vercel.app"),
 
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
+
   openGraph: {
     title: "Muhammad Danish | AI Engineer",
     description:

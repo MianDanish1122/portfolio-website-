@@ -51,7 +51,7 @@ export default function Hero() {
                 variant="secondary"
                 external
               >
-                📄 Download Resume
+                Download Resume
               </Button>
 
             </div>
