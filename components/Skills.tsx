@@ -1,3 +1,5 @@
+"use client";
+
 import { skills } from "../data/portfolio";
 import Container from "./ui/Container";
 

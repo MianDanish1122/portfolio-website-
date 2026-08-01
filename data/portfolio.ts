@@ -1,58 +1,59 @@
-// ===============================
+// =========================================
 // Personal Information
-// ===============================
+// =========================================
 
 export const portfolio = {
   name: "Muhammad Danish",
 
-  subtitle:
-    "AI Engineer | Machine Learning Engineer | Generative AI Developer",
+  role: "Machine Learning Engineer | Generative AI Developer",
 
-  about:
-    "Building intelligent AI applications with Machine Learning, Deep Learning, Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), AI Agents, and FastAPI. Passionate about solving real-world problems through modern AI technologies.",
+  subtitle: "AI Engineer | Machine Learning Engineer | Generative AI Application Developer",
 
-  careerObjective:
-    "To contribute as an AI Engineer by designing, developing, and deploying intelligent AI applications while continuously learning modern AI technologies.",
+  description:
+    "BS Artificial Intelligence graduate passionate about Machine Learning, Generative AI, RAG Systems, AI Agents and Computer Vision.",
+
+  about: "Building intelligent AI systems that transform ideas into real-world applications.",
 
   degree: "BS Artificial Intelligence",
 
-  university: "Abdul Wali Khan University Mardan",
-
-  graduation: "2026",
-
-  email: "mianmuhammaddanishkhattak@gmail.com",
-
-  phone: "+92 309 9598241",
+  university: "Abdul Wali Khan University",
 
   location: "Pakistan",
 
-  github: "https://github.com/MianDanish1122",
+  specialization: "Machine Learning • Generative AI • LLM Applications • AI Agents",
 
-  linkedin:
-    "https://www.linkedin.com/in/muhammad-danish-khattak/",
+  careerObjective: "To design, build, and deploy production-ready AI systems that leverage machine learning, generative AI, and agentic workflows to solve complex real-world problems at scale.",
 
-  resume: "/resume/MUHAMMAD.DANISH.CV.pdf",
+  resume: "/resume/Muhammad.Danish.CV.pdf",
+
+  social: {
+    github: "https://github.com/MianDanish1122",
+
+    linkedin: "https://linkedin.com/in/mianmuhammaddanish",
+
+    email: "mianmuhammaddanish@gmail.com",
+  },
 };
 
-// ===============================
+// =========================================
 // Skills
-// ===============================
+// =========================================
 
 export const skills = {
   programming: [
     "Python",
     "C++",
-    "SQL",
-    "HTML",
-    "CSS",
     "JavaScript",
+    "SQL",
   ],
 
   machineLearning: [
-    "Scikit-learn",
+    "Scikit-Learn",
     "Pandas",
     "NumPy",
-    "Matplotlib",
+    "OpenCV",
+    "Computer Vision",
+    "NLP",
   ],
 
   deepLearning: [
@@ -64,79 +65,199 @@ export const skills = {
   ],
 
   generativeAI: [
-    "OpenAI API",
-    "Google Gemini",
-    "Claude",
+    "LLMs",
+    "RAG",
     "LangChain",
     "LangGraph",
+    "AI Agents",
     "Prompt Engineering",
-    "RAG",
+    "Gemini",
+    "OpenAI",
   ],
 
   backend: [
     "FastAPI",
     "REST API",
-    "Streamlit",
+    "Supabase",
+    "Firebase",
   ],
 
   tools: [
     "Git",
     "GitHub",
+    "Docker",
+    "Vercel",
+    "Postman",
     "VS Code",
-    "Google Colab",
-    "Jupyter Notebook",
   ],
 
   learning: [
-    "Docker",
-    "MLOps",
-    "Kubernetes",
-    "AWS",
-    "Azure",
-    "CI/CD",
-    "GitHub Actions",
+    "MCP",
+    "Agentic AI",
+    "CrewAI",
+    "Multi-Agent Systems",
+    "Vector Databases",
   ],
 };
 
-// ===============================
+// =========================================
 // Experience
-// ===============================
+// =========================================
 
 export const experience = [
   {
     company: "10Pearls",
-    role: "Data Science Intern",
+    role: "Data Science Intern (SHINE Internship Program)",
     duration: "July 2026 – September 2026",
-    description:
-      "Completed an 8-week virtual internship focused on Data Science, Python, Machine Learning, and practical AI projects while strengthening software engineering skills.",
+    bullets: [
+      "Completed intensive training in Machine Learning, Data Science, and AI engineering through the SHINE Internship Program.",
+      "Built predictive models using Pandas, NumPy, Scikit-learn, and TensorFlow.",
+      "Performed EDA, data cleaning, and feature engineering on real-world datasets.",
+      "Worked with SQL and Python for data manipulation, analysis, and visualization.",
+    ],
   },
-
   {
-    company: "CODECILEX",
-    role: "AI / Machine Learning Intern",
-    duration: "2026",
-    description:
-      "Worked on machine learning, data preprocessing, model development, API integration, and AI-based solutions in a collaborative environment.",
+    company: "CodeCilex",
+    role: "AI Engineer Intern",
+    duration: "February 2, 2026 – May 12, 2026",
+    bullets: [
+      "Developed and optimized machine learning models for AI applications using Python and Scikit-learn.",
+      "Built and tested REST APIs with FastAPI to deploy AI models for inference.",
+      "Worked with LLMs, Retrieval-Augmented Generation (RAG), and vector databases.",
+      "Collaborated with senior engineers using Git and GitHub for version control.",
+    ],
+  },
+  {
+    company: "DeveloperHub Corporation",
+    role: "Machine Learning Intern",
+    duration: "May 3, 2025 – July 3, 2025",
+    bullets: [
+      "Implemented machine learning models for classification and prediction tasks using Python and Scikit-learn.",
+      "Collected, cleaned, and analyzed datasets to improve model performance.",
+      "Developed preprocessing pipelines for missing values, encoding, and feature scaling.",
+      "Participated in agile team workflows using Git and daily stand-ups.",
+    ],
   },
 ];
 
-// ===============================
+// =========================================
+// Contact
+// =========================================
+
+export const contact = {
+  email: "mianmuhammaddanishkhattak@gmail.com",
+
+  phone: "+92 3099598241",
+
+  whatsapp: "+92 3099598241",
+
+  location: "Pakistan",
+
+  github: "https://github.com/MianDanish1122",
+
+  linkedin: "https://www.linkedin.com/in/muhammad-danish-khattak/",
+};
+
+// =========================================
 // Projects
-// ===============================
+// =========================================
 
 export const projects = [
   {
-    title: "AI Voice Agent",
+    title: "Uraan.ai",
+    slug: "uraan.ai",
+
     featured: true,
 
+    status: "In Progress",
+
+    category: "Generative AI",
+
     description:
-      "An intelligent conversational voice assistant using speech recognition, LLMs, and text-to-speech.",
+      "AI-powered Urdu-first adaptive study coach using RAG, AI Agents, voice interaction and personalized learning.",
+
+    technologies: [
+      "Next.js",
+      "FastAPI",
+      "Gemini",
+      "LangGraph",
+      "RAG",
+      "Supabase",
+    ],
+
+    github: "https://github.com/comebck-pakistan/cohort-1-squad-himalaya/tree/full-product",
+
+    image: "/projects/uraan.ai.png",
+  },
+
+  {
+    title: "Multi-Agent Healthcare Assistant",
+    slug: "multi-agent-healthcare-assistant",
+
+    featured: true,
+
+    status: "Completed",
+
+    category: "Generative AI",
+
+    description:
+      "Healthcare assistant using specialized AI agents for symptom analysis and medical guidance.",
 
     technologies: [
       "Python",
       "FastAPI",
-      "OpenAI",
+      "LangGraph",
+      "Gemini",
+    ],
+
+    demo: "https://app-wine-pi.vercel.app/",
+
+    image: "/projects/Healthcare_intelligenece.png",
+  },
+
+  {
+    title: "HumRahi Hub",
+    slug: "humrahi-hub",
+
+    featured: true,
+
+    status: "Completed",
+
+    category: "AI Platform",
+
+    description:
+      "AI-powered assistance platform developed during the AWKUM AGORA Hackathon, securing 1st Position.",
+
+    technologies: [
+      "Next.js",
+      "Firebase",
+      "Tailwind CSS",
+      "AI",
+    ],
+
+    demo: "https://humrahihub.vercel.app/#what-we-do",
+
+    image: "/projects/HumRahi_Hub.png",
+  },
+
+  {
+    title: "Text-to-Speech Voice Agent",
+    slug: "text-to-speech-voice-agent",
+
+    featured: true,
+
+    status: "Completed",
+
+    category: "Generative AI",
+
+    description:
+      "Conversational voice assistant using Speech-to-Text, LLMs and Text-to-Speech.",
+
+    technologies: [
+      "Python",
+      "FastAPI",
       "Whisper",
+      "OpenAI",
       "TTS",
     ],
 
@@ -145,147 +266,64 @@ export const projects = [
 
     demo: "",
 
-    image: "/projects/voice-agent.png",
+    image:
+      "/projects/Text_To_Speech_Vioce_Agent_Project.png",
   },
 
   {
-    title: "AI Tutor (RAG)",
+    title: "Analyzing Student Behavior Before and After Classroom Sessions",
+    slug: "analyzing-student-behavior-before-and-after-classroom-sessions",
 
     featured: true,
 
+    status: "Completed",
+
+    category: "Computer Vision",
+
     description:
-      "A Retrieval-Augmented Generation based AI tutor that provides textbook-grounded answers and personalized learning support.",
+      "Deep learning system analyzing facial emotions before and after classroom sessions.",
 
     technologies: [
       "Python",
-      "LangChain",
-      "Gemini",
-      "RAG",
-      "Vector DB",
+      "TensorFlow",
+      "Computer Vision",
+      "FER2013",
+      "Deep Learning",
     ],
 
-    github: "",
+    github: "https://github.com/MianDanish1122/Analyzing-Student-Behavior-Before-and-After-Classroom-Sessions",
 
     demo: "",
 
-    image: "/projects/ai-tutor.png",
+    image:
+      "/projects/Analyzing Student Behavior Before and After Classroom Sessions.jpeg",
   },
-
   {
-    title: "Fake News Detection",
+    title: "Fake News Detection using Machine Learning",
+    slug: "fake-news-detection-using-machine-learning",
 
     featured: true,
 
+    status: "Completed",
+
+    category: "Machine Learning",
+
     description:
-      "Machine learning application for detecting fake news articles using NLP techniques.",
+      "Developed a news classification application that detects Real vs. Fake articles using NLP and trained classification models.",
 
     technologies: [
       "Python",
       "Scikit-learn",
-      "TF-IDF",
-      "Random Forest",
-    ],
-
-    github: "",
-
-    demo: "",
-
-    image: "/projects/fake-news.png",
-  },
-
-  {
-    title: "Heart Disease Prediction",
-
-    featured: true,
-
-    description:
-      "Predicts heart disease risk using machine learning and patient health data.",
-
-    technologies: [
-      "Python",
       "Pandas",
-      "Scikit-learn",
-      "Streamlit",
+      "NumPy",
+      "NLTK",
+      "TF-IDF",
     ],
 
-    github: "",
+    github: "https://github.com/MianDanish1122/Fake-News-Detection-project",
 
     demo: "",
 
-    image: "/projects/heart-disease.png",
+    image: "/projects/Fake_New_Detection.png",
   },
 ];
-
-// ===============================
-// Certifications
-// ===============================
-
-export const certifications = [
-  {
-    title: "HEC Generative AI Training Program",
-    issuer: "Higher Education Commission (HEC)",
-    year: "2026",
-  },
-
-  {
-    title: "Deep Learning with Keras",
-    issuer: "Certificate",
-    year: "2026",
-  },
-
-  {
-    title: "Red Hat System Administration",
-    issuer: "Red Hat",
-    year: "2026",
-  },
-
-  {
-    title: "Machine Learning Courses",
-    issuer: "Coursera",
-    year: "2026",
-  },
-];
-
-// ===============================
-// Education
-// ===============================
-
-export const education = {
-  degree: "Bachelor of Science in Artificial Intelligence",
-
-  university: "Abdul Wali Khan University Mardan",
-
-  duration: "2022 – 2026",
-
-  cgpa: "3.36",
-
-  coursework: [
-    "Machine Learning",
-    "Deep Learning",
-    "Artificial Intelligence",
-    "Computer Vision",
-    "Natural Language Processing",
-    "Data Mining",
-    "Database Systems",
-    "Data Structures & Algorithms",
-  ],
-};
-
-// ===============================
-// Contact
-// ===============================
-
-export const contact = {
-  email: "mianmuhammaddanishkhattak@gmail.com",
-
-  phone: "+92 309 9598241",
-
-  location: "Pakistan",
-
-  github: "https://github.com/MianDanish1122",
-
-  linkedin:
-    "https://www.linkedin.com/in/muhammad-danish-khattak/",
-
-  portfolio: "Coming Soon",
-};
