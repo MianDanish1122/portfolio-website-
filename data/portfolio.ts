@@ -5,12 +5,12 @@
 export const portfolio = {
   name: "Muhammad Danish",
 
-  role: "Machine Learning Engineer | Generative AI Developer",
+  role: "AI/ML Engineer",
 
-  subtitle: "AI Engineer | Machine Learning Engineer | Generative AI Application Developer",
+  subtitle: "Generative AI • Machine Learning • LLMs • RAG • AI Agents",
 
   description:
-    "BS Artificial Intelligence graduate passionate about Machine Learning, Generative AI, RAG Systems, AI Agents and Computer Vision.",
+    "AI/ML Engineer building production AI applications with Generative AI, Machine Learning, LLMs, RAG systems, and AI Agents.",
 
   about: "Building intelligent AI systems that transform ideas into real-world applications.",
 
@@ -82,6 +82,13 @@ export const skills = {
     "Firebase",
   ],
 
+  frontend: [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+  ],
+
   tools: [
     "Git",
     "GitHub",
@@ -106,6 +113,19 @@ export const skills = {
 
 export const experience = [
   {
+    company: "Excels Tech Solution LLC",
+    role: "Junior AI/ML Engineer",
+    duration: "",
+    bullets: [
+      "Building and maintaining Retrieval-Augmented Generation (RAG) systems and LLM-powered applications.",
+      "Developing AI chatbots and AI agents for production use cases.",
+      "Designing and implementing backend AI services with FastAPI.",
+      "Contributing to AI application architecture and production system design.",
+      "Factoring LLM/AI cost and production trade-offs into system design decisions.",
+    ],
+    technologies: ["RAG", "LLMs", "AI Agents", "FastAPI"],
+  },
+  {
     company: "10Pearls",
     role: "Data Science Intern (SHINE Internship Program)",
     duration: "July 2026 – September 2026",
@@ -115,6 +135,7 @@ export const experience = [
       "Performed EDA, data cleaning, and feature engineering on real-world datasets.",
       "Worked with SQL and Python for data manipulation, analysis, and visualization.",
     ],
+    technologies: ["Python", "Pandas", "NumPy", "Scikit-learn", "TensorFlow", "SQL"],
   },
   {
     company: "CodeCilex",
@@ -126,6 +147,7 @@ export const experience = [
       "Worked with LLMs, Retrieval-Augmented Generation (RAG), and vector databases.",
       "Collaborated with senior engineers using Git and GitHub for version control.",
     ],
+    technologies: ["Python", "Scikit-learn", "FastAPI", "LLMs", "RAG", "Vector Databases", "Git", "GitHub"],
   },
   {
     company: "DeveloperHub Corporation",
@@ -137,6 +159,47 @@ export const experience = [
       "Developed preprocessing pipelines for missing values, encoding, and feature scaling.",
       "Participated in agile team workflows using Git and daily stand-ups.",
     ],
+    technologies: ["Python", "Scikit-learn", "Git"],
+  },
+];
+
+// =========================================
+// Achievements
+// =========================================
+
+export const achievements = [
+  {
+    title: "2nd Position — Comeback Pakistan (Uraan.ai)",
+    description:
+      "Selected from thousands of applicants for an 8-week venture-building program; presented to 20+ founders, HR professionals, and investors.",
+  },
+  {
+    title: "1st Position — 2nd AWKUM AGORA 2026 Hackathon",
+    description: "Team Tec-Hub, Project: Humrahi Hub.",
+  },
+  {
+    title: "Runner-Up — ByteSprint 2025 Speed Coding Competition",
+    description: "",
+  },
+  {
+    title: "Participant — NeoHacks GIKI Edition 2025",
+    description: "",
+  },
+  {
+    title: "Participant — Flood.pk Hackathon (NIC Peshawar)",
+    description: "",
+  },
+  {
+    title: "Participant — IUPC 2026",
+    description: "",
+  },
+  {
+    title: "Participant — Hack Nation Global AI Hackathon",
+    description: "",
+  },
+  {
+    title: "Participant — Studiio Hacks",
+    description: "",
   },
 ];
 
@@ -186,6 +249,8 @@ export const projects = [
     ],
 
     github: "https://github.com/comebck-pakistan/cohort-1-squad-himalaya/tree/full-product",
+
+    demo: "https://www.uraan.app/",
 
     image: "/projects/uraan.ai.png",
   },
@@ -325,5 +390,20 @@ export const projects = [
     demo: "",
 
     image: "/projects/Fake_New_Detection.png",
+  },
+];
+
+// =========================================
+// Stats (derived from the data above — edit
+// the arrays themselves, not these numbers)
+// =========================================
+
+export const stats = [
+  { value: projects.length, suffix: "+", label: "AI Projects Shipped" },
+  { value: experience.length, suffix: "", label: "Internships Completed" },
+  {
+    value: skills.generativeAI.length,
+    suffix: "+",
+    label: "GenAI Technologies",
   },
 ];

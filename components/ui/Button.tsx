@@ -15,8 +15,8 @@ export default function Button({
 }: ButtonProps) {
   const className =
     variant === "primary"
-      ? "inline-flex items-center justify-center rounded-lg bg-blue-600 px-6 py-3 text-white font-medium hover:bg-blue-700 transition"
-      : "inline-flex items-center justify-center rounded-lg border border-blue-600 px-6 py-3 text-blue-600 font-medium hover:bg-blue-50 transition";
+      ? "inline-flex items-center justify-center rounded-lg bg-accent px-6 py-3 text-background font-medium hover:bg-accent-strong transition"
+      : "inline-flex items-center justify-center rounded-lg border border-border px-6 py-3 text-foreground font-medium hover:border-accent hover:text-accent transition";
 
   // External links
   if (external) {

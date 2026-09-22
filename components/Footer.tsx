@@ -8,11 +8,12 @@ import {
 } from "react-icons/fa";
 
 import { contact, portfolio } from "../data/portfolio";
+import { navigation } from "../data/navigation";
 
 export default function Footer() {
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="border-t border-border bg-surface text-foreground">
 
       {/* Main Footer */}
       <div className="mx-auto max-w-7xl px-8 py-16">
@@ -26,11 +27,10 @@ export default function Footer() {
               {portfolio.name}
             </h2>
 
-            <p className="mt-4 leading-8 text-gray-400">
-              AI Engineer passionate about Machine Learning,
-              Deep Learning, Generative AI, LLMs,
-              Retrieval-Augmented Generation (RAG),
-              AI Agents, and FastAPI.
+            <p className="mt-4 leading-8 text-muted">
+              AI/ML Engineer building real applications with Machine
+              Learning, Generative AI, LLMs, Retrieval-Augmented
+              Generation (RAG), AI Agents, and FastAPI.
             </p>
 
           </div>
@@ -44,35 +44,13 @@ export default function Footer() {
 
             <ul className="space-y-3">
 
-              <li>
-                <a href="#home" className="text-gray-400 hover:text-white">
-                  Home
-                </a>
-              </li>
-
-              <li>
-                <a href="#about" className="text-gray-400 hover:text-white">
-                  About
-                </a>
-              </li>
-
-              <li>
-                <a href="#skills" className="text-gray-400 hover:text-white">
-                  Skills
-                </a>
-              </li>
-
-              <li>
-                <a href="#projects" className="text-gray-400 hover:text-white">
-                  Projects
-                </a>
-              </li>
-
-              <li>
-                <a href="#contact" className="text-gray-400 hover:text-white">
-                  Contact
-                </a>
-              </li>
+              {navigation.map((item) => (
+                <li key={item.name}>
+                  <a href={item.href} className="text-muted hover:text-accent">
+                    {item.name}
+                  </a>
+                </li>
+              ))}
 
             </ul>
 
@@ -91,7 +69,8 @@ export default function Footer() {
                 href={contact.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-gray-800 p-4 text-xl transition hover:bg-blue-600"
+                aria-label="GitHub"
+                className="rounded-full border border-border p-4 text-xl transition hover:border-accent hover:text-accent"
               >
                 <FaGithub />
               </a>
@@ -100,7 +79,8 @@ export default function Footer() {
                 href={contact.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-gray-800 p-4 text-xl transition hover:bg-blue-600"
+                aria-label="LinkedIn"
+                className="rounded-full border border-border p-4 text-xl transition hover:border-accent hover:text-accent"
               >
                 <FaLinkedin />
               </a>
@@ -109,7 +89,8 @@ export default function Footer() {
                 href={`https://mail.google.com/mail/?view=cm&to=${encodeURIComponent(contact.email)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-gray-800 p-4 text-xl transition hover:bg-blue-600"
+                aria-label="Email"
+                className="rounded-full border border-border p-4 text-xl transition hover:border-accent hover:text-accent"
               >
                 <FaEnvelope />
               </a>
@@ -123,17 +104,17 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-800">
+      <div className="border-t border-border">
 
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-8 py-6 md:flex-row">
 
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-muted">
             © 2026 Muhammad Danish. All Rights Reserved.
           </p>
 
           <a
             href="#home"
-            className="flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 transition hover:bg-blue-700"
+            className="flex items-center gap-2 rounded-lg bg-accent px-4 py-2 font-medium text-background transition hover:bg-accent-strong"
           >
             <FaArrowUp />
             Back to Top
